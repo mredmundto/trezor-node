@@ -1,0 +1,83 @@
+{
+  "_args": [
+    [
+      "trezor.js-node@5.10.7",
+      "/Users/edmund.to/kycchain/trezor-desktop-app"
+    ]
+  ],
+  "_development": true,
+  "_from": "trezor.js-node@5.10.7",
+  "_id": "trezor.js-node@5.10.7",
+  "_inBundle": false,
+  "_integrity": "sha1-D5ADv3RqxzNSkJNY6PJD35X61H4=",
+  "_location": "/trezor.js-node",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "trezor.js-node@5.10.7",
+    "name": "trezor.js-node",
+    "escapedName": "trezor.js-node",
+    "rawSpec": "5.10.7",
+    "saveSpec": null,
+    "fetchSpec": "5.10.7"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/trezor.js-node/-/trezor.js-node-5.10.7.tgz",
+  "_spec": "5.10.7",
+  "_where": "/Users/edmund.to/kycchain/trezor-desktop-app",
+  "author": {
+    "name": "TREZOR",
+    "email": "info@trezor.io"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": [
+      "transform-object-rest-spread",
+      "transform-flow-strip-types",
+      "transform-class-properties",
+      "add-module-exports"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/trezor/trezor.js/issues"
+  },
+  "dependencies": {
+    "bignumber.js": "^6.0.0",
+    "bitcoinjs-lib-zcash": "^3.0.0",
+    "ecurve": "^1.0.2",
+    "node-fetch": "^1.6.0",
+    "randombytes": "^2.0.1",
+    "semver-compare": "1.0.0",
+    "trezor-link-node": "0.2.105",
+    "unorm": "^1.3.3"
+  },
+  "description": "High-level Javascript API for Bitcoin Trezor for node",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-class-properties": "^6.18.0",
+    "babel-plugin-transform-flow-strip-types": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.6.5",
+    "babel-preset-es2015": "^6.18.0",
+    "bump-version": "^0.5.0"
+  },
+  "homepage": "https://github.com/trezor/trezor.js",
+  "keywords": [
+    "trezor",
+    "bitcoin",
+    "wallet"
+  ],
+  "license": "LGPL-3.0",
+  "main": "lib/index-node.js",
+  "name": "trezor.js-node",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/trezor/trezor.js.git"
+  },
+  "version": "5.10.7"
+}

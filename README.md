@@ -2,7 +2,9 @@
 
 ```
 npm install 
-node ./example-node/example.js
+cd example-node
+npm install
+node ./example.js
 ```
 
 Please help to review the function in example.js 
@@ -13,6 +15,7 @@ from line 49 is to sign transaction
 
 according to lib/utils/signethtx.js.flow
 
+```
 signEthTx(
     session: Session,
     address_n: Array<number>,
@@ -24,3 +27,4 @@ signEthTx(
     data?: string,
     chain_id?: number
 )
+```

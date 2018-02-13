@@ -38,34 +38,34 @@ list.on('connect', function (device) {
     var hardeningConstant = 0x80000000;
 
     // To log out Ethereum Address
-    // device.waitForSessionAndRun(function (session) {
-    //     return session.typedCall("EthereumGetAddress", "EthereumAddress", {address_n: [0]}, {show_display:true}).then( result => {
-    //         console.log('start logging ethereum address')
-    //         console.log('address here: ', result)
-    //         console.log('ending logging ethereum address')
-    //     })
-    // })
+    device.waitForSessionAndRun(function (session) {
+        return session.typedCall("EthereumGetAddress", "EthereumAddress", {address_n: [0]}, {show_display:true}).then( result => {
+            console.log('start logging ethereum address')
+            console.log('address here: ', result)
+            console.log('ending logging ethereum address')
+        })
+    })
 
     // To sign eth transaction
-    device.waitForSessionAndRun(function (session) {
-        return session.typedCall("signEthTx", 
-            {address_n: [0]}, 
-            {nonce: "2"},
-            // {gas_price: new BN('2900000')}, 
-            // {gas_limit: new BN('20000000000')}, 
-            {gas_price: '2900000'}, 
-            {gas_limit: '20000000000'},  
-            {to: '0x42AA3D8a40C9Bd501f92617a280a539f3Cb6957A'}, 
-            {value: '20180212'}, 
-            {chain_id: 3}            
-            )
-        .then( result => {
-            console.log('signEthTx!!!', result)
-        })
-        .catch(function (error) {
-            console.error('Error!!!', error);
-        });
-    })
+    // device.waitForSessionAndRun(function (session) {
+    //     return session.typedCall("signEthTx", 
+    //         {address_n: [0]}, 
+    //         {nonce: "2"},
+    //         // {gas_price: new BN('2900000')}, 
+    //         // {gas_limit: new BN('20000000000')}, 
+    //         {gas_price: '2900000'}, 
+    //         {gas_limit: '20000000000'},  
+    //         {to: '0x42AA3D8a40C9Bd501f92617a280a539f3Cb6957A'}, 
+    //         {value: '20180212'}, 
+    //         {chain_id: 3}            
+    //         )
+    //     .then( result => {
+    //         console.log('signEthTx!!!', result)
+    //     })
+    //     .catch(function (error) {
+    //         console.error('Error!!!', error);
+    //     });
+    // })
 
     // low level API
     // device.waitForSessionAndRun(function (session) {

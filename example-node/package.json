@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bignumber.js": "^6.0.0",
     "trezor.js-node": "^5.4.3"
   }
 }
